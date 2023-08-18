@@ -1,0 +1,48 @@
+#contenido-comando::-webkit-scrollbar {
+    display: none;  /* Ocultar scroll */
+}
+
+#code, #code-description {
+    float: left;
+    color: whitesmoke; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 33em;
+    animation: type 4s steps(127, end); 
+}
+
+#code-description {
+    color: black;
+    width: 70em;
+}
+
+#animation {
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+#cursor {
+    animation: blink 1s infinite;
+    font-weight: bold;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+@keyframes blink{
+    to{opacity: .0}
+}

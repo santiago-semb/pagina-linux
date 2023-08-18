@@ -1,0 +1,20 @@
+<div class="container mx-auto">
+    <div class="grid grid-cols-3 p-2 text-center pt-20 h-full text-black">
+        <div>
+            <a routerLink="/virtual-machine" class="border p-2 text-blue-600 hover:bg-gray-200">Virtual Machine</a>            
+        </div>
+        <div>
+            <a routerLink="/distribuciones" class="border p-2 text-blue-600 hover:bg-gray-200">Distribuciones</a>
+        </div>
+        <div>
+            <a routerLink="/about-me" class="border p-2 text-blue-600 hover:bg-gray-200">About Me</a>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+<div class="text-black text-center mt-32" *ngIf="mostrarCartelAyuda">
+    <i class="text-9xl fa-regular fa-circle-question"></i>
+    <p class="text-2xl mt-2">Ayuda</p>
+</div>
+

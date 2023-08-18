@@ -1,0 +1,53 @@
+#menu-izq {
+    background-color: #080808;
+}
+
+#menu-izq::-webkit-scrollbar {
+    display: none;  /* Ocultar scroll */
+}
+
+#code5 {
+    float: left;
+    color: black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 40em;
+    animation: type 2s steps(127, end);
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+@keyframes blink{
+    to{opacity: .0}
+}
+
+
+#redes {
+    animation-name: filter;
+    animation-duration: 2s;
+    filter: saturate(400%);
+}
+
+@keyframes filter {
+    from { filter: saturate(10%); }
+    to { filter: saturate(400%);}
+}
+
+#animation {
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    filter: saturate(400%);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes aparecer {
+    from {opacity: 0;}
+    to {
+        opacity: 100;
+        filter: saturate(400%);
+    }
+}

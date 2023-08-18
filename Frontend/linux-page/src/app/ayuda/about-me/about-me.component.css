@@ -1,0 +1,39 @@
+#links-github {
+    float: left;
+    color: black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 13.3em;
+    animation: type 2s steps(127, end); 
+}
+
+#links-linkedin {
+    float: left;
+    color: black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 23.2em;
+    animation: type 3s steps(127, end); 
+}
+
+#links-linkedin {
+    float: left;
+    color: black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 18.1em;
+    animation: type 2s steps(127, end); 
+}
+
+#links-web {
+    float: left;
+    color: black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 16em;
+    animation: type 2s steps(127, end); 
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+  } 

@@ -1,0 +1,28 @@
+<header class="w-full h-16 bg-black fixed">
+    <div class="grid grid-cols-7">
+        <div class="">
+            <img class="h-14 w-14 ml-2 bg-gray-600 rounded mt-1 pt-1" src="https://imgs.search.brave.com/Oy_1VmfIo_2aokAJ7aSFA0mkdl_9CayA9bfY47256oY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzAz/L0xJTlVYLUxPR08t/NDUzeDUwMC5wbmc" alt="linux">
+        </div>
+        <div class="mt-5">
+            <a routerLink="home" class="hover:text-gray-400 ease-in duration-200">Home</a>
+        </div>
+        <div class="mt-5">
+            <a routerLink="comandos" class="hover:text-gray-400 ease-in duration-200">Comandos</a>
+        </div>
+        <div class="mt-5">
+            <a routerLink="ayuda" class="hover:text-gray-400 ease-in duration-200">Ayuda</a>
+        </div>
+        <div class="col-span-2 text-center">
+            <div class="mt-3">
+            <form id="form">
+                <input type="text" id="buscador" name="busqueda" [(ngModel)]="busqueda" class="focus:outline-none border-2 h-9 w-56 rounded text-black" placeholder="Buscar comando" autocomplete="off">
+                <button type="submit" (click)="submit()"><i class="ml-2 bg-gray-500 p-2 rounded fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="https://ubuntu.com/" target="_blank"><button class="bg-orange-500 text-black rounded mt-2 mr-2 float-right" id="menu"><img id="img-animation" class="h-12 w-12" src="https://imgs.search.brave.com/A2Mcy4lmL8QiAw3yoazHwnWHDYA9IUDi6deDZujQo3o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzllL1VidW50dUNv/Ri5zdmc.svg" alt=""></button></a>
+        </div>
+    </div>
+
+</header>

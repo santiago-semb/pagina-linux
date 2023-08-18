@@ -1,0 +1,34 @@
+<div id="menu-izq" class="w-1/6 absolute inset-y-0 p-3 mt-16 overflow-y-scroll scrollbar-hide h-auto">
+    
+    <div *ngFor="let comando of comandos">
+        
+        <div class="my-1"> 
+            <li class="ml-2" style="list-style: none;"><code>» </code><a class="border px-2 rounded hover:bg-white hover:text-black ease-in duration-100" routerLink="/ver-comando/{{comando['nombre']}}">{{comando['nombre']}}</a></li>
+        </div>
+
+    </div>
+
+</div>
+
+<div *ngIf="ventanaInicial" id="contenido-comando" class="text-black w-5/6 right-0 inset-y-0 mt-32 absolute overflow-hidden">
+    <div class="w-full h-full">
+
+        <div class="p-2 w-2/3 text-justify h-10 rounded mx-48 flex">
+            <code id="code5">Bienvenido a la lista de comandos</code>      
+        </div>
+        <div class="p-2 w-2/3 text-justify h-10 rounded mx-48 flex">
+            <code id="code5">En el panel izquierdo podés buscar los comandos que necesites</code>       
+        </div>
+        <div class="p-2 w-2/3 text-justify h-10 rounded mx-48 flex">
+            <code id="code5">Si te gustó la página podés seguirme en mis redes sociales</code>   
+        </div>
+            
+        <div id="animation" class="w-2/3 h-64 mx-48 my-8 flex">
+
+            <a href="https://www.linkedin.com/in/santiago-sembini-0abb57262/" target="_blank" id="red-social-1" class="absolute h-16 w-48 mt-8"><img src="https://imgs.search.brave.com/Ms7nXPqJOisRCzSrsho5fIxDlRGZvAQnQ5rRNvXToRQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODBiNTdmY2Q5OTk2/ZTI0YmM0M2M1Mjgu/cG5n" alt=""></a>
+            <a href="https://www.instagram.com/santiago.sembini/" target="_blank" id="red-social-2" class="absolute h-16 w-48 ml-64 mt-4"><img src="https://imgs.search.brave.com/tf8RQKzan59ndB4ekYywpXdzfQ53M9X0sNQsFIPGVmM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMDAw/bWFyY2FzLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8x/MS9Mb2dvLUluc3Rh/Z3JhbS0xLTUwMHgy/ODEucG5n" alt=""></a>
+
+        </div>
+
+    </div>    
+</div>

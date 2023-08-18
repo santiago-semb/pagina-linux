@@ -1,0 +1,15 @@
+<form action="" class="pt-24 text-black">
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" name="nombreTag" [(ngModel)]="nombreTag" placeholder="Nombre tag">
+    </div>
+    <div>
+        <label for="">Comando</label>
+        <input type="text" name="comandoTag" [(ngModel)]="comandoTag" placeholder="comando">
+    </div>
+    <div>
+        <label for="">Descripcion</label>
+        <textarea type="text" name="descripcionTag" [(ngModel)]="descripcionTag" placeholder="Descripcion"></textarea>
+    </div>
+    <button type="submit" (click)="submit()">Crear</button>
+</form>

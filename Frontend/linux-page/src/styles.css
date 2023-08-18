@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    color: whitesmoke;
+}
+
+/* Ocultar la barra de desplazamiento en Mozilla Firefox */
+@-moz-document url-prefix() {
+    .scrollbar-hide {
+      scrollbar-width: none;
+    }
+}
