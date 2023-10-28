@@ -16,6 +16,7 @@ import { CrearComandoComponent } from './crear-comando/crear-comando.component';
 import { FormsModule } from '@angular/forms';
 import { VerTagComponent } from './ver-tag/ver-tag.component';
 import { CrearTagComponent } from './crear-tag/crear-tag.component';
+import { CarrouselHomeComponent } from './carrousel-home/carrousel-home.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CrearTagComponent } from './crear-tag/crear-tag.component';
     AboutMeComponent,
     CrearComandoComponent,
     VerTagComponent,
-    CrearTagComponent
+    CrearTagComponent,
+    CarrouselHomeComponent
   ],
   imports: [
     BrowserModule,

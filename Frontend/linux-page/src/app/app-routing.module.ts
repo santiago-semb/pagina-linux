@@ -11,6 +11,9 @@ import { CrearComandoComponent } from './crear-comando/crear-comando.component';
 import { CrearTagComponent } from './crear-tag/crear-tag.component';
 
 const routes: Routes = [
+  // RUTA POR DEFECTO
+  {path:'', redirectTo:'home', pathMatch:'full'},
+  // RESTO DE RUTAS
   {path:'ayuda', component: AyudaComponent},
   // AYUDA
   {path:'virtual-machine', component: VmComponent},
@@ -19,8 +22,8 @@ const routes: Routes = [
   // 
   {path:'comandos', component: ComandosComponent},
   {path:'ver-comando/:nombre', component: VerComandoComponent},
-  {path:'crear-comando', component: CrearComandoComponent},
-  {path:'crear-tag', component: CrearTagComponent},
+  {path:'adminccommand', component: CrearComandoComponent},
+  {path:'adminctag', component: CrearTagComponent},
   {path:'home', component: HomeComponent},
   
 ];

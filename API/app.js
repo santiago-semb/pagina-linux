@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -30,6 +30,7 @@ db.connect((err) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
 
 app.get('/comandos', (req, res) => {
     const query = 'SELECT * FROM comandos ORDER BY nombre ASC';
@@ -105,7 +106,7 @@ app.post('/set-tag', (req, res) => {
   tag = req.body.tag
   comando = req.body.comando
   descripcion = req.body.descripcion
-  const query = `INSERT INTO tags (tag, comando, descripcion) VALUES ('${tag}','${comando}','${descripcion}')`;
+  const query = `INSERT INTO tags (tagg, comando, descripcion) VALUES ('${tag}','${comando}','${descripcion}')`;
   db.query(query, (err, result) => {
     if (err) {
       console.error('Error executing MySQL query:', err);

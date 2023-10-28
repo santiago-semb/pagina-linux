@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist/linux-page",
+    "site": "api-linux-node-9f997",
     "ignore": [
       "firebase.json",
       "**/.*",

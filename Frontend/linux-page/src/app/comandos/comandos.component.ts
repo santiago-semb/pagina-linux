@@ -16,6 +16,7 @@ export class ComandosComponent implements OnInit {
   onoff = []
 
   ventanaInicial = false
+  linkActive = false
 
   ngOnInit(): void {
     (this.router.url != '/comandos') ? this.ventanaInicial = false : this.ventanaInicial = true

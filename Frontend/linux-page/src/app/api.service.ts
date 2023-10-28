@@ -9,7 +9,7 @@ import { Tag } from './Model/Tag';
 })
 export class ApiService {
 
-  private apiUrl = "http://localhost:3000"
+  private apiUrl = "https://gfdgsdgfsd.onrender.com"
 
   constructor(private http: HttpClient) { }
 
