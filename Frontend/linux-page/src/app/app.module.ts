@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { VerTagComponent } from './ver-tag/ver-tag.component';
 import { CrearTagComponent } from './crear-tag/crear-tag.component';
 import { CarrouselHomeComponent } from './carrousel-home/carrousel-home.component';
+import { InfoHomeComponent } from './info-home/info-home.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CarrouselHomeComponent } from './carrousel-home/carrousel-home.componen
     CrearComandoComponent,
     VerTagComponent,
     CrearTagComponent,
-    CarrouselHomeComponent
+    CarrouselHomeComponent,
+    InfoHomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,50 @@
+<div class="h-96 bg-black mb-12 rounded px-4 py-4 mt-4" style="float: left; width: 30%;">
+    <code class="underline">Permisos UNIX</code>
+    <ul class="mt-4 ml-6">
+        <li><code>R (read) -> 4</code></li>
+        <li><code>W (write) -> 2</code></li>
+        <li><code>X (execute) -> 1</code></li>
+    </ul>
+    <br>
+    <code class="underline">Archivos</code>
+    <ul class="mt-4 ml-6">
+        <li><code>- (archivo plano)</code></li>
+        <li><code>d (directorio)</code></li>
+        <li><code>l (enlace)</code></li>
+        <li><code>b (archivo de bloque)</code></li>
+        <li><code>c (archivo de caracteres)</code></li>
+        <li><code>p (archivo pipe)</code></li>
+        <li><code>s (archivo socket)</code></li>
+    </ul>
+</div>
+
+<div class="h-96 bg-black mb-12 rounded px-4 py-4 mt-4" style="float: right; width: 68%;">
+    <p><code>> ls -l</code></p>
+    <p><code style="letter-spacing: 4px;">
+        <span class="mr-2"><code>></code></span>
+        <span class="text-white">-</span>
+        <span class="text-red-500">rwx</span>
+        <span class="text-yellow-500">r--</span>
+        <span class="text-green-500">r--</span>
+        <span class="mx-4"><span class="text-gray-500">2</span></span>
+        <span class="text-violet-500 mr-2">root</span>
+        <span class="text-orange-500 mx-2">root</span>
+        <span class="text-blue-600 mr-2">320</span>
+        <span class="text-blue-900 mr-2">2012-03-12</span>
+        <span class="text-gray-200">file.txt</span>
+    </code></p>
+    <br>
+    <ul class="ml-5">
+        <li><span class="text-white mr-2">-</span> <code>← tipo de archivo</code></li>
+        <li><span class="text-red-500 mr-2">rwx</span> <code>← permisos de propietario</code></li>
+        <li><span class="text-yellow-500 mr-2">r--</span> <code>← permisos de grupo</code></li>
+        <li><span class="text-green-500 mr-2">r--</span> <code>← permisos de otros</code></li>
+        <li><span class="text-gray-500 mr-2">2</span> <code>← numero de hardlinks</code></li>
+        <li><span class="text-violet-500 mr-2">root</span> <code>← dueño del archivo</code></li>
+        <li><span class="text-orange-500 mr-2">root</span> <code>← grupo del archivo</code></li>
+        <li><span class="text-blue-600 mr-2">320</span> <code>← tamaño del archivo en bytes</code></li>
+        <li><span class="text-blue-900 mr-2">2012-03-12</span> <code>← fecha y hora de la última modificación del archivo</code></li>
+        <li><span class="text-gray-200 mr-2">file.txt</span> <code>← nombre del archivo</code></li>
+    </ul>
+   
+</div>
