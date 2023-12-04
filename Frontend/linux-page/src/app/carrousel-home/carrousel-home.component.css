@@ -1,0 +1,22 @@
+/* Estilo base del contenedor */
+.contenedor-imagenes-opacity {
+    position: relative;
+    width: 380px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    height: 380px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    overflow: hidden;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+/* Estilo base de las imágenes */
+.imagen-cambiante-opacity {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
+}
+/* Clase para hacer que la imagen aparezca */
+.aparecer {
+    opacity: 1;
+}

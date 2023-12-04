@@ -8,47 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class CarrouselHomeComponent implements OnInit {
 
   ngOnInit(): void {
-     // botones siguiente y anterior
-     let go = document.getElementById("go")
-     let back = document.getElementById("back")
- 
-     let primera = document.getElementsByClassName("primera") 
 
-     carrousel(primera)   
-     
-     function carrousel(marca)
-     {
-         let contador = 0;
-         let num = 0
- 
-         go.addEventListener("click", () => {     
-         while(contador < marca.length && num <marca.length-1)
-         {
-             marca[num].style.opacity = "0"
-             num++  
-             contador++
-             break;
-         }
-         if(num < marca.length)
-         {
-             marca[num].style.opacity = "100"
-         }
-     })
-     
-     back.addEventListener("click", () => {
-         while(num < marca.length && num > 0)
-         {
-             marca[num].style.opacity = "0"
-             num--
-             contador--
-             break;
-         }
-         if(num < marca.length)
-         {
-             marca[num].style.opacity = "100"
-         }
-     })
-     }
-    }
+    this.carrouselOpacity()
+  }
+    carrouselOpacity(){
+    // JavaScript para hacer que las imágenes cambien automáticamente
+    document.addEventListener('DOMContentLoaded', function () {
+        var imagenes = document.querySelectorAll('.imagen-cambiante-opacity');
+        var index = 0;
+
+        setInterval(function () {
+            // Hacer que la imagen actual desaparezca
+            imagenes[index].classList.remove('aparecer');
+
+            // Calcular el índice de la siguiente imagen
+            index = (index + 1) % imagenes.length;
+
+            // Hacer que la siguiente imagen aparezca
+            imagenes[index].classList.add('aparecer');
+        }, 5000); // Cambia el tiempo (5000ms = 5 segundos) según tus preferencias
+    });
+}
     
 }

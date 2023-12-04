@@ -1,20 +1,20 @@
 <div class="h-96 bg-black mb-12 rounded px-4 py-4 mt-4" style="float: left; width: 30%;">
     <code class="underline">Permisos UNIX</code>
     <ul class="mt-4 ml-6">
-        <li><code>R (read) -> 4</code></li>
-        <li><code>W (write) -> 2</code></li>
-        <li><code>X (execute) -> 1</code></li>
+        <li><code>R (read) → 4</code></li>
+        <li><code>W (write) → 2</code></li>
+        <li><code>X (execute) → 1</code></li>
     </ul>
     <br>
     <code class="underline">Archivos</code>
     <ul class="mt-4 ml-6">
-        <li><code>- (archivo plano)</code></li>
-        <li><code>d (directorio)</code></li>
-        <li><code>l (enlace)</code></li>
-        <li><code>b (archivo de bloque)</code></li>
-        <li><code>c (archivo de caracteres)</code></li>
-        <li><code>p (archivo pipe)</code></li>
-        <li><code>s (archivo socket)</code></li>
+        <li><code>- → archivo plano</code></li>
+        <li><code>d → directorio</code></li>
+        <li><code>l → enlace</code></li>
+        <li><code>b → archivo de bloque</code></li>
+        <li><code>c → archivo de caracteres</code></li>
+        <li><code>p → archivo pipe</code></li>
+        <li><code>s → archivo socket</code></li>
     </ul>
 </div>
 
@@ -47,4 +47,55 @@
         <li><span class="text-gray-200 mr-2">file.txt</span> <code>← nombre del archivo</code></li>
     </ul>
    
+</div>
+
+<div class="h-auto rounded mb-5 text-black w-full float-left text-center" id="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>/bin</th>
+                <th>/boot</th>
+                <th>/dev</th>
+                <th>/etc</th>
+                <th>/home</th>
+                <th>/initrd</th>
+                <th>/lib</th>
+                <th>/lost+found</th>
+                <th>/media</th>
+                <th>/mnt</th>
+                <th>/opt</th>
+                <th>/proc</th>
+                <th>/root</th>
+                <th>/sbin</th>
+                <th>/srv</th>
+                <th>/sys</th>
+                <th>/tmp</th>
+                <th>/usr</th>
+                <th>/var</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>aplicaciones binarias importantes</td>
+                <td>ficheros de configuración del arranque, núcleos y otros ficheros necesarios para el arranque (boot) del equipo</td>
+                <td>los ficheros de dispositivo</td>
+                <td>ficheros de configuración, scripts de arranque, etc</td>
+                <td>directorios personales (home) para los diferentes usuarios</td>
+                <td>usado cuando se crea un proceso de arranque initrd personalizado</td>
+                <td>librerías del sistema</td>
+                <td>proporciona un sistema de "perdido+encontrado" (lost+found) para los ficheros que existen debajo del directorio raíz (/)</td>
+                <td>particiones montadas (cargadas) automáticamente en el disco duro y medios (media) extraíbles como CDs, cámaras digitales, etc.</td>
+                <td>sistemas de archivos montados manualmente en el disco duro</td>
+                <td>proporciona una ubicación donde instalar aplicaciones opcionales (de terceros)</td>
+                <td>directorio dinámico especial que mantiene información sobre el estado del sistema, incluyendo los procesos actualmente en ejecución</td>
+                <td>directorio personal del usuario root (superusuario); también llamado "barra-root"</td>
+                <td>binarios importantes del sistema</td>
+                <td>puede contener archivos que se sirven a otros sistemas</td>
+                <td>archivos del sistema</td>
+                <td>archivos temporales</td>
+                <td>aplicaciones y archivos a los que puede acceder la mayoría de los usuarios</td>
+                <td>archivos variables como archivos de registros y bases de datos</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
