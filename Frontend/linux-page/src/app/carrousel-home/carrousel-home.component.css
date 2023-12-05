@@ -1,10 +1,10 @@
 /* Estilo base del contenedor */
 .contenedor-imagenes-opacity {
     position: relative;
-    width: 380px; /* Ajusta el tamaño del contenedor según tus necesidades */
-    height: 380px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    width: 300px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    height: 300px; /* Ajusta el tamaño del contenedor según tus necesidades */
     overflow: hidden;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-top: -20px;
 }
 
@@ -12,11 +12,79 @@
 .imagen-cambiante-opacity {
     position: absolute;
     width: 90%;
-    height: 90%;
+    height: 85%;
+    margin-top: 20px;
     opacity: 0;
     transition: opacity 1s ease-in-out; /* Agrega una transición suave para el cambio de opacidad */
 }
 /* Clase para hacer que la imagen aparezca */
 .aparecer {
     opacity: 1;
+}
+
+@media only screen and (max-width: 1023px) {
+    .container-linux-info {
+        margin-left: -100px;
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .container-linux-info {
+        margin-left: 75px;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 923px) {
+    .contenedor-imagenes-opacity {
+        width: 150px;
+        height: 150px;
+        margin-top: 250px;
+        margin-left: -70px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contenedor-imagenes-opacity {
+        width: 150px;
+        height: 150px;
+        margin-top: 300px;
+        margin-left: -70px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .contenedor-imagenes-opacity {
+        margin-top: 320px;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .container-linux-info {
+        padding-top: 50px;
+    }
+    .contenedor-imagenes-opacity {
+        margin-top: 380px;
+    }
+}
+
+@media only screen and (max-width: 563px) {
+    .contenedor-imagenes-opacity {
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .contenedor-imagenes-opacity {
+        margin-top: 500px;
+    }
+}
+
+@media only screen and (max-width: 439px) {
+    .contenedor-imagenes-opacity {
+        margin-top: 520px;
+    }
 }

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Comando {\n  constructor(nombre, categoria, descripcion) {\n    this.nombre = nombre;\n    this.categoria = categoria;\n    this.descripcion = descripcion;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

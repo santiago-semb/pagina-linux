@@ -10,3 +10,62 @@
         transform: rotate(360deg);
       }
     }
+
+
+@media only screen and (max-width: 923px) {
+    #buscador {
+      width: 80%;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    form button {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    #div-navs div{
+        width: 100%;
+        display: block;
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    #div-form {
+      margin-top: 55px;
+      position: absolute;
+      background-color: black;
+      padding-bottom: 10px;
+    }
+
+    #div-ayuda {
+      text-align: right;
+    }
+
+    #div-ubuntu img{
+      width: 0px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+  #div-home {
+    margin-left: 40px;
+  }
+  #div-comandos, #div-ayuda {
+    margin-left: 50px;
+    text-align: right;
+  }
+
+}
+
+@media only screen and (max-width: 463px) {
+  #div-comandos {
+    text-align: center;
+  }
+  #div-ayuda {
+    text-align: right;
+    margin-left: 70px;
+  }
+
+}

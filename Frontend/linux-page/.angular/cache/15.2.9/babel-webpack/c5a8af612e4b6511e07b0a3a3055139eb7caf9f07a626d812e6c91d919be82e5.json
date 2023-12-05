@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Tag {\n  constructor(tag, comando, descripcion) {\n    this.tag = tag;\n    this.comando = comando;\n    this.descripcion = descripcion;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
