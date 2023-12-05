@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 970px) {
     .container-linux-info {
-        margin-left: 75px;
+        margin-left: 50px;
         margin-top: -10px;
     }
 }
@@ -86,5 +86,23 @@
 @media only screen and (max-width: 439px) {
     .contenedor-imagenes-opacity {
         margin-top: 520px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .contenedor-imagenes-opacity {
+        margin-top: 550px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .contenedor-imagenes-opacity {
+        margin-top: 625px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .contenedor-imagenes-opacity {
+        display: none;
     }
 }
