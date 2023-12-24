@@ -18,11 +18,24 @@ export class ComandosComponent implements OnInit {
   ventanaInicial = false
   linkActive = false
 
+  public cargando: boolean = true;
+  public registros: any[] = [];
+
   ngOnInit(): void {
     (this.router.url != '/comandos') ? this.ventanaInicial = false : this.ventanaInicial = true
-    this.api.getComandos().subscribe((data) => {
-      this.comandos = data
-    })
+    this.obtenerRegistros()
+  }
+
+  obtenerRegistros() {
+    this.api.getComandos().subscribe(
+      (data) => {
+        this.comandos = data
+      },
+      (error) => {
+        console.error('Error al obtener los registros', error);
+        this.cargando = false;
+      }
+    );
   }
   
 }
